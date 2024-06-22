@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calculator',
+      title: 'Calculators',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -155,7 +155,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CalculatorButton(
                     '+',
                     onPressed: () => _onButtonPressed('+'),
-                    color: Colors.orange,
+                    color: Color.fromRGBO(43, 163, 197, 1)
                   ),
                   CalculatorButton(
                     '0',
@@ -170,7 +170,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CalculatorButton(
                     '=',
                     onPressed: () => _onButtonPressed('='),
-                    color: Colors.orange,
+                    color: const Color.fromARGB(255, 0, 255, 247),
                   ),
                 ],
               ),
